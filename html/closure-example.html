@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+    var fade = function (node) {
+    	var level = 1;
+    	var step = function ( ) {
+        var hex = level.toString(16);
+        console.log("Hex value is:" + hex);
+        node.style.backgroundColor = '#FFFF' + hex + hex;
+        if (level < 15) {
+            level += 1;
+            setTimeout(step, 100);
+        }
+    };
+    setTimeout(step, 100);
+};
+</script>
+</head>
+<body>
+<h1>"Title"</h1>
+<h1>"Title2"</h1>
+<h1>"Title3"</h1>
+<h1>"Title4"</h1>
+<script>fade(document.body);</script>
+</body>
+</html>
