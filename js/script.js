@@ -7,4 +7,7 @@ Number.method('integer', function (){
     return Math[this<0 ? 'ceil' : 'floor'](this);
 });
 
+
+
+
 alert(document.write((-10/3).integer( )));
